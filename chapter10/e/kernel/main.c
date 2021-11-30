@@ -317,6 +317,7 @@ void Init()
 	int i;
 	for (i = 0; i < sizeof(tty_list) / sizeof(tty_list[0]); i++) {
 		int pid = fork();
+		printf(" fork pid %d \n", pid);
 		if (pid != 0) { /* parent process */
 			printf("[parent is running, child pid:%d]\n", pid);
 		}
