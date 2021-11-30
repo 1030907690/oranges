@@ -212,9 +212,12 @@ void untar(const char * filename)
 		while (bytes_left) {
 			printf("untar bytes_left %d \n", bytes_left);
 			int iobytes = min(chunk, bytes_left);
+			printf("untar iobytes %d \n", iobytes);
 			read(fd, buf,
 			     ((iobytes - 1) / SECTOR_SIZE + 1) * SECTOR_SIZE);
+			printf("untar read %d \n", iobytes);
 			write(fdout, buf, iobytes);
+			printf("untar write %d \n", iobytes);
 			bytes_left -= iobytes;
 		}
 		printf("untar close(fdout) \n");
