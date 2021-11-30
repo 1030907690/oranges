@@ -307,7 +307,7 @@ void Init()
 	assert(fd_stdout == 1);
 
 	printf("Init() is running ...\n");
-
+    printf("start untar ...\n");
 	/* extract `cmd.tar' */
 	untar("/cmd.tar");
 			
