@@ -218,8 +218,9 @@ void untar(const char * filename)
 			bytes_left -= iobytes;
 		}
 		close(fdout);
+		printf("untar while(1) ")
 	}
-
+    printf("untar close(fd) before ")
 	close(fd);
 
 	printf(" done]\n");
