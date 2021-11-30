@@ -71,7 +71,7 @@ disasm :
 # We assume that "a.img" exists in current folder
 buildimg :
 	dd if=boot/boot.bin of=a.img bs=512 count=1 conv=notrunc
-	sudo mount -t msdos -o a boot.img /mnt/floppy
+	sudo mount -t msdos -o a a.img /mnt/floppy
 	sudo cp -fv boot/loader.bin /mnt/floppy/
 	sudo cp -fv kernel.bin /mnt/floppy
 	sudo umount /mnt/floppy
