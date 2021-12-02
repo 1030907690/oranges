@@ -185,7 +185,7 @@ void TestA()
 			printf("Failed to remove file: %s\n", rfilenames[i]);
 	}
 
-	// spin("TestA");
+	spin("TestA");
 }
 
 /*======================================================================*
