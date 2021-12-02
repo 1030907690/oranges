@@ -185,8 +185,7 @@ void TestA()
 			printf("Failed to remove file: %s\n", rfilenames[i]);
 	}
 
-	// spin("TestA");
-	TestB();
+	spin("TestA");
 }
 
 /*======================================================================*
@@ -194,6 +193,7 @@ void TestA()
  *======================================================================*/
 void TestB()
 {
+	printf("TestB run: \n");
 	char tty_name[] = "/dev_tty1";
 
 	int fd_stdin  = open(tty_name, O_RDWR);
