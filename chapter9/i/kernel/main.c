@@ -107,6 +107,7 @@ PUBLIC int kernel_main()
 
 	restart();
 
+	TestB();
 	while(1){}
 }
 
