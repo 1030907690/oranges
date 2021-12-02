@@ -106,8 +106,7 @@ PUBLIC int kernel_main()
         init_keyboard();
 
 	restart();
-
-	TestB();
+ 
 	while(1){}
 }
 
@@ -186,8 +185,7 @@ void TestA()
 			printf("Failed to remove file: %s\n", rfilenames[i]);
 	}
 
-	// spin("TestA");
-	TestB();
+	spin("TestA");
 }
 
 /*======================================================================*
