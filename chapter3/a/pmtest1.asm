@@ -90,6 +90,3 @@ LABEL_SEG_CODE32:
 
 SegCode32Len	equ	$ - LABEL_SEG_CODE32
 ; END of [SECTION .s32]
-
-times 510 - ($ - $$)
-dw 0xaa55
