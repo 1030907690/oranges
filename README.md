@@ -32,3 +32,10 @@ LDFLAGS		= -Ttext $(ENTRYPOINT) -Map krnl.map -m elf_i386
 - libpthread.so.0:  error adding symbols: DSO missing from command line     -lz -lrt -lm -lpthread   https://blog.csdn.net/fjx1173865548/article/details/44131203
  
 
+
+- Bochs is exiting with the following message: [BIOS  ] No bootable device. 
+#romimage: file=/usr/share/bochs/BIOS-bochs-latest
+    romimage: file=/usr/local/share/bochs/BIOS-bochs-latest
+    #vgaromimage: file=/usr/share/vgabios/vgabios.bin
+    vgaromimage: file=/usr/local/share/bochs/VGABIOS-lgpl-latest
+   https://blog.csdn.net/xiaoheiyohehe/article/details/19034541
