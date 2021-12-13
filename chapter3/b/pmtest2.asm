@@ -182,7 +182,7 @@ LABEL_SEG_CODE32:
 	xor	esi, esi
 	xor	edi, edi
 	mov	esi, OffsetPMMessage	; 源数据偏移
-	mov	edi, (80 * 11 + 0) * 2	; 目的数据偏移。屏幕第 10 行, 第 0 列。
+	mov	edi, (80 * 10 + 0) * 2	; 目的数据偏移。屏幕第 10 行, 第 0 列。
 	cld
 .1:
 	lodsb
