@@ -39,3 +39,7 @@ LDFLAGS		= -Ttext $(ENTRYPOINT) -Map krnl.map -m elf_i386
     #vgaromimage: file=/usr/share/vgabios/vgabios.bin
     vgaromimage: file=/usr/local/share/bochs/VGABIOS-lgpl-latest
    https://blog.csdn.net/xiaoheiyohehe/article/details/19034541
+
+
+- 启动bochs时报错No bootable device 从第三章开始bximage生成的有问题，因为没有times 510 - ($ - $$)
+dw 0xaa55 代码  https://blog.csdn.net/xiaominthere/article/details/16952505
