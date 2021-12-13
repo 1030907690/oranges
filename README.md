@@ -1,7 +1,10 @@
 # oranges
 
 ## 软件
+
 ### bochs-2.6.9.tar.gz
+sudo apt install bochs
+
 ./configure --enable-debugger --enable-disasm
 make
 sudo make install
